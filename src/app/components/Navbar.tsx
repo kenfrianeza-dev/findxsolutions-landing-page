@@ -16,20 +16,18 @@ const Navbar: FC<NavbarProps> = () => {
 	return (
 		<>
 			<nav className="fixed w-full text-white z-50">
-				<div className="w-5/6 py-2 mx-auto flex justify-between">
-					<Link href="/">
-						<Image src="/logo.png" alt="Logo" width={64} height={64} />
+				<div className="w-5/6 py-6 mx-auto flex justify-between">
+					<Link className="flex items-center justify-center" href="/">
+						<Image src="/logo2.png" alt="Logo" width={50} height={50} />
 					</Link>
 					<div className="flex items-center justify-center">
 						{/* Mobile Menu */}
 						<TbMenu className="lg:hidden md:hidden block" size={32} />
 						{/* Desktop Menu */}
-						<ul className="lg:flex md:flex hidden gap-x-4">
+						<ul className="lg:flex md:flex hidden gap-x-6 font-light">
 							{data.map((item) => (
 								<li key={item.name}>
-									<Link className="" href={item.url}>
-										{item.name}
-									</Link>
+									<Link href={item.url}>{item.name}</Link>
 								</li>
 							))}
 						</ul>

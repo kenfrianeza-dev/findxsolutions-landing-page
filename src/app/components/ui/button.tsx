@@ -7,7 +7,7 @@ interface ButtonPrimaryProps {
 
 const ButtonPrimary: FC<ButtonPrimaryProps> = ({ content }) => {
 	return (
-		<Button className="bg-white hover:bg-gray-200 text-customPrimary">
+		<Button className="text-base bg-transparent hover:bg-white hover:text-customPrimary text-white border border-white">
 			{content}
 		</Button>
 	);
