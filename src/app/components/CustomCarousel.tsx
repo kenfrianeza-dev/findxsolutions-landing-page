@@ -9,7 +9,7 @@ import Image from "next/image";
 
 interface CustomCarouselProps {}
 interface CustomDotProps {
-	onClick: undefined;
+	onClick: Function;
 	active: boolean;
 }
 
@@ -26,6 +26,10 @@ const CustomDot: FC<CustomDotProps> = ({ onClick, ...rest }) => {
 			{active ? <GoDotFill /> : <GoDot />}
 		</button>
 	);
+};
+
+const onClick: FC<CustomDotProps> = () => {
+	return 0;
 };
 
 const CustomCarousel: FC<CustomCarouselProps> = () => {
@@ -64,7 +68,7 @@ const CustomCarousel: FC<CustomCarouselProps> = () => {
 				autoPlay
 				infinite
 				partialVisible
-				customDot={<CustomDot onClick={undefined} active={false} />}
+				customDot={<CustomDot onClick={onClick} active={false} />}
 			>
 				{data.map((item) => {
 					return (

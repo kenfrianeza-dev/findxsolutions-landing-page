@@ -16,7 +16,7 @@ const LearnMore: FC<LearnMoreProps> = () => {
 					fill
 				/>
 				<div className="relative flex w-full min-h-screen bg-customPrimary/60 bg-gradient-to-b from-transparent via-transparent to-customPrimary text-white">
-					<div className="m-20 w-3/4 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
+					<div className="m-20 w-5/6 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
 						<h1 className="text-4xl text-center font-bold">About Us</h1>
 						<p>
 							A NEW PLAYER IN THE INDUSTRY, FindX Solutions Philippines is
