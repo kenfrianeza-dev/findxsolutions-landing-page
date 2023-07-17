@@ -8,7 +8,7 @@ interface PrivacyPolicyProps {}
 const PrivacyPolicy: FC<PrivacyPolicyProps> = () => {
 	return (
 		<div className="bg-customPrimary w-full min-h-screen pt-24 pb-10">
-			<div className="w-2/4 mx-auto text-white flex flex-col gap-y-6">
+			<div className="w-5/6 mx-auto text-white flex flex-col gap-y-6">
 				<h1 className="text-4xl text-center font-bold">Privacy Policy</h1>
 				<div className="flex flex-col gap-y-4">
 					<PolicyHeader />
