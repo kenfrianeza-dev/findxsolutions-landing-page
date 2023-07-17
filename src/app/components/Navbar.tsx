@@ -10,7 +10,7 @@ interface NavbarProps {}
 const Navbar: FC<NavbarProps> = () => {
 	const data = [
 		{ name: "Home", url: "/", icon: "" },
-		{ name: "About Us", url: "/about", icon: "" },
+		{ name: "About Us", url: "#about-us", icon: "" },
 		{ name: "Contact", url: "/contact", icon: "" },
 	];
 	return (

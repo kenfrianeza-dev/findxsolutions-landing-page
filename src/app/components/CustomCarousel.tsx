@@ -73,6 +73,7 @@ const CustomCarousel: FC<CustomCarouselProps> = () => {
 								className="relative aspect-square object-cover bg-customPrimary opacity-75 hover:opacity-100 duration-300"
 								src={item.source}
 								alt={item.name}
+								placeholder="blur"
 							/>
 							<h1 className="absolute w-full bottom-0 left-0 text-center p-4 bg-customPrimary/50 backdrop-brightness-50 backdrop-blur-lg">
 								{item.name}
