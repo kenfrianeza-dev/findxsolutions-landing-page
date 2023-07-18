@@ -15,8 +15,9 @@ const Navbar: FC<NavbarProps> = () => {
 	];
 	return (
 		<>
+			{/* <nav className="fixed w-full text-white z-50 bg-customPrimary/25 backdrop-blur-xl border-b border-b-white/20"> */}
 			<nav className="fixed w-full text-white z-50">
-				<div className="w-5/6 py-6 mx-auto flex justify-between">
+				<div className="w-5/6 py-3 mx-auto flex justify-between">
 					<Link className="flex items-center justify-center" href="/">
 						<Image src="/logo2.png" alt="Logo" width={50} height={50} />
 					</Link>

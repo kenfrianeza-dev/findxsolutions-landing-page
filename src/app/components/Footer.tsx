@@ -46,7 +46,7 @@ const Footer: FC<FooterProps> = () => {
 						<div className="flex flex-col gap-y-1 text-white/75 font-extralight">
 							<Link
 								className="flex items-center justify-center gap-x-2 w-fit hover:text-white"
-								href="/"
+								href="https://www.facebook.com/profile.php?id=100082557270572"
 							>
 								<BsFacebook /> Facebook
 							</Link>

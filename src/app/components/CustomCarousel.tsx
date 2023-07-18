@@ -4,6 +4,10 @@ import { GoDot, GoDotFill } from "react-icons/go";
 import product1 from "../../../public/laptop.jpg";
 import product2 from "../../../public/tv.jpg";
 import product3 from "../../../public/garments.jpg";
+import product4 from "../../../public/poster.jpg";
+import product5 from "../../../public/trophy.jpg";
+import product6 from "../../../public/brochure.jpg";
+import product7 from "../../../public/umbrella.jpg";
 
 import Image from "next/image";
 
@@ -57,12 +61,16 @@ const CustomCarousel: FC<CustomCarouselProps> = () => {
 		{ source: product1, name: "Office Equipments" },
 		{ source: product2, name: "Appliances" },
 		{ source: product3, name: "Garments" },
+		{ source: product4, name: "Advertising Goods" },
+		{ source: product5, name: "Awards & Citations" },
+		{ source: product6, name: "Collaterals" },
+		{ source: product7, name: "Corporate Giveaways" },
 	];
 
 	return (
 		<>
 			<Carousel
-				className="py-8"
+				className="py-8 z-40"
 				responsive={responsive}
 				showDots
 				autoPlay

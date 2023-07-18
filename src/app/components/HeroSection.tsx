@@ -1,6 +1,7 @@
 import Image from "next/image";
 import background from "../../../public/background.jpg";
 import ButtonPrimary from "./ui/button";
+import logo from "../../../public/logo2.png";
 
 const HeroSection = () => {
 	return (
@@ -16,10 +17,18 @@ const HeroSection = () => {
 				<div className="w-5/6 mx-auto py-24 h-screen">
 					<div className="flex flex-col justify-center gap-y-6 h-full">
 						<div className="flex flex-col gap-y-1">
-							<h1 className="font-sans font-semibold text-5xl">Welcome to</h1>
-							<h1 className="font-sans font-semibold text-5xl">
-								Find<span className="text-customSecondary">X</span> Solutions
-							</h1>
+							<Image
+								className="w-16"
+								src={logo}
+								alt="logo"
+								placeholder="blur"
+							/>
+							<div>
+								<h1 className="font-sans font-semibold text-5xl">Welcome to</h1>
+								<h1 className="font-sans font-semibold text-5xl">
+									Find<span className="text-customSecondary">X</span> Solutions
+								</h1>
+							</div>
 						</div>
 						<div className="text-xl">
 							<p>The Philippines’ No.1 Go-To Company</p>
