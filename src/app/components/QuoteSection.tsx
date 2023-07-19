@@ -17,17 +17,9 @@ import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormField, FormItem, FormLabel } from "@/components/ui/form";
+import { Form, FormField, FormItem } from "@/components/ui/form";
 
 interface QuoteSectionProps {}
-
-type formValue = {
-	email: string;
-	name: string;
-	company: string;
-	product: string;
-	message: string;
-};
 
 const FormSchema = z.object({
 	email: z
@@ -113,7 +105,7 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 
 	return (
 		<>
-			<section className="bg-customPrimary text-white">
+			<section id="contact-section" className="bg-customPrimary text-white">
 				<div className="w-5/6 pt-10 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
 					<h1 className="text-3xl text-center">Quote Now</h1>
 					<Form {...form}>
