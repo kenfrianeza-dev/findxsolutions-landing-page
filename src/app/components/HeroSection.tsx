@@ -7,7 +7,7 @@ const HeroSection = () => {
 	return (
 		<section>
 			<Image
-				className="absolute object-cover bg-center bg-cover bg-no-repeat"
+				className="absolute object-cover bg-center bg-cover bg-no-repeat -z-50"
 				src={background}
 				alt="background"
 				placeholder="blur"

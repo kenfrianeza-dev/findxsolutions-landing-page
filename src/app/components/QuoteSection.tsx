@@ -105,7 +105,10 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 
 	return (
 		<>
-			<section id="contact-section" className="bg-customPrimary text-white">
+			<section
+				id="contact-section"
+				className="bg-customPrimary text-white z-50"
+			>
 				<div className="w-5/6 pt-10 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
 					<h1 className="text-3xl text-center">Quote Now</h1>
 					<Form {...form}>
@@ -114,8 +117,8 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 							className="flex flex-col gap-4 w-full sm:w-1/2"
 						>
 							{/* Email & Name Field */}
-							<div className="flex gap-4">
-								<div className="w-1/2">
+							<div className="flex flex-col md:flex-row gap-4">
+								<div className="md:w-3/4 sm:w-full">
 									<Label htmlFor="email">Your email address</Label>
 									<Input
 										type="email"
@@ -127,7 +130,7 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 									</p>
 								</div>
 
-								<div className="w-1/2">
+								<div className="md:w-3/4 sm:w-full">
 									<Label htmlFor="subject">Your name</Label>
 									<Input
 										id="name"
@@ -139,8 +142,8 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 								</div>
 							</div>
 
-							<div className="flex gap-4">
-								<div className="w-1/2">
+							<div className="flex flex-col md:flex-row gap-4">
+								<div className="md:w-3/4 sm:w-full">
 									<Label htmlFor="email">Your company name</Label>
 									<Input
 										{...register("company")}
@@ -153,7 +156,7 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 								</div>
 
 								{/* Company & Product Field */}
-								<div className="w-1/2">
+								<div className="md:w-3/4 sm:w-full">
 									<Label>Select a product</Label>
 									<FormField
 										control={control}
