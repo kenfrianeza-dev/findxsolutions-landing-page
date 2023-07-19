@@ -6,7 +6,9 @@ import {
 	ProductSection,
 	ClientSection,
 	AboutSection,
+	QuoteSection,
 } from "./components";
+import { Toaster } from "@/components/ui/toaster";
 
 export default function Home() {
 	return (
@@ -19,6 +21,10 @@ export default function Home() {
 			<ClientSection />
 			{/* About Section */}
 			<AboutSection />
+			{/* Quote Section */}
+			<QuoteSection />
+			{/* Toaster */}
+			<Toaster />
 		</main>
 	);
 }

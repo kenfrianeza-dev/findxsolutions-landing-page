@@ -1,18 +1,18 @@
 import Image from "next/image";
 import background from "../../../public/background.jpg";
-import ButtonPrimary from "./ui/button";
 import logo from "../../../public/logo2.png";
+import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
 	return (
 		<section>
-			<Image
+			{/* <Image
 				className="absolute object-cover bg-center bg-cover bg-no-repeat"
 				src={background}
 				alt="background"
 				placeholder="blur"
 				fill
-			/>
+			/> */}
 			<div className="relative bg-customPrimary/60 bg-gradient-to-b from-transparent via-transparent to-customPrimary text-white">
 				<div className="w-5/6 mx-auto py-24 h-screen">
 					<div className="flex flex-col justify-center gap-y-6 h-full">
@@ -36,7 +36,7 @@ const HeroSection = () => {
 						</div>
 						{/* Button */}
 						<div className="inline-block">
-							<ButtonPrimary content="Get Started" />
+							<Button variant="outline">Get Started</Button>
 						</div>
 					</div>
 				</div>

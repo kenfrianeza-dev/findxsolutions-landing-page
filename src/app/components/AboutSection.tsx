@@ -8,7 +8,7 @@ const AboutSection: FC<AboutSectionProps> = () => {
 		<>
 			<section id="about-us" className="bg-customPrimary text-white">
 				<div className="w-5/6 pt-20 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
-					<h1 className="text-3xl text-center">ABOUT US</h1>
+					<h1 className="text-3xl text-center">About Us</h1>
 					<div className="text-center">
 						<p>
 							Founded in 2022, inside a tiny room,{" "}

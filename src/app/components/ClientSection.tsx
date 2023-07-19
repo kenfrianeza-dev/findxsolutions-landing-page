@@ -54,7 +54,7 @@ const ClientSection: FC<ClientSectionProps> = () => {
 				<div className="relative bg-customPrimary/60 bg-gradient-to-b from-customPrimary via-transparent to-customPrimary text-white">
 					<div className="relative w-5/6 pt-20 pb-20 mx-auto my-auto">
 						<h1 className="text-3xl text-center mb-2">
-							OUR REGULAR CLIENTS SINCE 2022
+							Our Regular Clients Since 2022
 						</h1>
 						{/* Desktop */}
 						<div>
