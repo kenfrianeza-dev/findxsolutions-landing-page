@@ -110,7 +110,7 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 				className="bg-customPrimary text-white z-50"
 			>
 				<div className="w-5/6 pt-10 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
-					<h1 className="text-3xl text-center">Quote Now</h1>
+					<h1 className="text-3xl text-center">Request a Quote</h1>
 					<Form {...form}>
 						<form
 							onSubmit={handleSubmit(onSubmit)}
