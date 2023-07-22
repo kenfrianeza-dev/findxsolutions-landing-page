@@ -15,10 +15,13 @@ const Footer: FC<FooterProps> = () => {
 							<Link className="w-fit hover:text-white" href="/">
 								Home
 							</Link>
+							<Link className="w-fit hover:text-white" href="#products-section">
+								Products
+							</Link>
 							<Link className="w-fit hover:text-white" href="/learn-more">
 								About Us
 							</Link>
-							<Link className="w-fit hover:text-white" href="/">
+							<Link className="w-fit hover:text-white" href="#contact-section">
 								Contact Us
 							</Link>
 							<Link className="w-fit hover:text-white" href="/privacy-policy">

@@ -10,11 +10,15 @@ interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = () => {
 	const [color, setColor] = useState(false);
+	const [toggle, setToggle] = useState(false);
+
 	const changeColor = () => {
 		window.scrollY >= 90 ? setColor(true) : setColor(false);
 	};
 
 	window.addEventListener("scroll", changeColor);
+
+	const toggleMobileMenu = () => {};
 
 	const data = [
 		{ name: "Home", url: "/", offset: 0, id: "hero-section" },
@@ -53,7 +57,11 @@ const Navbar: FC<NavbarProps> = () => {
 					</Link>
 					<div className="flex items-center justify-center">
 						{/* Mobile Menu */}
-						<TbMenu className="lg:hidden md:hidden block" size={32} />
+						<TbMenu
+							className="lg:hidden md:hidden block cursor-pointer"
+							size={32}
+							onClick={}
+						/>
 						{/* Desktop Menu */}
 						<ul className="lg:flex md:flex hidden gap-x-6 font-light">
 							{data.map((item) => (
