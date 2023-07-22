@@ -19,15 +19,15 @@ const LearnMore: FC<LearnMoreProps> = () => {
 	return (
 		<>
 			<section className="bg-customPrimary">
-				<Image
+				{/* <Image
 					className="absolute object-cover bg-center bg-cover bg-no-repeat"
 					src={background}
 					alt="background"
 					placeholder="blur"
 					fill
-				/>
+				/> */}
 				<div className="relative flex w-full min-h-screen bg-customPrimary/60 bg-gradient-to-b from-transparent via-transparent to-customPrimary text-white">
-					<div className="mt-15 w-5/6 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
+					<div className="m-20 w-5/6 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
 						<motion.h1
 							initial={{
 								opacity: 0,
@@ -72,7 +72,7 @@ const LearnMore: FC<LearnMoreProps> = () => {
 
 						<div className="border-b border-b-white/25 w-full"></div>
 
-						<div className="grid grid-cols-3 gap-4">
+						<div className="grid md:grid-cols-3 grid-cols-1 gap-4">
 							<div className="flex flex-col gap-4 ">
 								<motion.h1
 									initial={{
