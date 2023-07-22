@@ -1,7 +1,5 @@
 import Image from "next/image";
 import background from "../../../public/background.jpg";
-// import logo from "../../../public/logo2.png";
-// import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -45,14 +43,14 @@ const HeroSection = () => {
 							</motion.div>
 							{/* Button */}
 							<motion.div
-								className="inline-block"
+								className="inline-block mt-4"
 								initial={{ opacity: 0 }}
 								animate={{ opacity: 1 }}
 								transition={{ duration: 1.5 }}
 							>
 								<Link
 									href="#products-section"
-									className="border px-4 py-2 rounded-md hover:bg-white hover:text-customPrimary duration-300"
+									className="text-xl border px-4 py-2 rounded-md hover:bg-white hover:text-customPrimary duration-300"
 								>
 									Get Started
 								</Link>
