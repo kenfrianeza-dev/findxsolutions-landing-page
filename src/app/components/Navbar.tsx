@@ -3,12 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useEffect, useState } from "react";
-import { TbMenu } from "react-icons/tb";
+import { HiBars2, HiXMark } from "react-icons/hi2";
+import { motion } from "framer-motion";
 
 interface NavbarProps {}
 
 const Navbar: FC<NavbarProps> = () => {
 	const [color, setColor] = useState(false);
+	const [toggle, setToggle] = useState(false);
 
 	useEffect(() => {
 		const changeColor = () => {
@@ -44,11 +46,14 @@ const Navbar: FC<NavbarProps> = () => {
 					</Link>
 					<div className="flex items-center justify-center">
 						{/* Mobile Menu */}
-						<TbMenu
+						<HiBars2
 							className="lg:hidden md:hidden block cursor-pointer"
 							size={32}
-							// onClick={}
+							onClick={() => {
+								setToggle(!toggle);
+							}}
 						/>
+
 						{/* Desktop Menu */}
 						<ul className="lg:flex md:flex hidden gap-x-6 font-light">
 							{data.map((item) => (
@@ -60,6 +65,38 @@ const Navbar: FC<NavbarProps> = () => {
 					</div>
 				</div>
 			</nav>
+
+			{/* Mobile Navmenu */}
+
+			<motion.div
+				initial={{ x: toggle ? 500 : 0 }}
+				animate={{ x: toggle ? 0 : 500 }}
+				transition={{ ease: "easeInOut" }}
+				className={`fixed flex flex-col right-0 md:hidden bg-customPrimary/90 backdrop-blur-md text-white h-screen w-2/3 z-[1000]`}
+			>
+				<div className="p-3 mt-2">
+					<HiXMark
+						size={32}
+						onClick={() => {
+							setToggle(false);
+						}}
+					/>
+				</div>
+				<div className="flex flex-col gap-4 mx-4">
+					{data.map((item) => (
+						<Link
+							key={item.name}
+							className="text-2xl px-4 py-3 text-right hover:bg-white/10 duration-300 rounded-sm border border-white/10"
+							href={item.url}
+							onClick={() => {
+								setToggle(false);
+							}}
+						>
+							{item.name}
+						</Link>
+					))}
+				</div>
+			</motion.div>
 		</>
 	);
 };
