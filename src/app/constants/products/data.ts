@@ -1,14 +1,14 @@
 export const products = [
   {
     category: 'Advertising Goods',
-    name: 'Poster',
-    image_path: '/assets/product-thumbnail/advertising-goods/poster.jpg',
+    name: 'Signage',
+    image_path: '/assets/product-thumbnail/advertising-goods/signage.jpg',
     slug: 'advertising-goods'
   },
   {
     category: 'Advertising Goods',
-    name: 'Signage',
-    image_path: '/assets/product-thumbnail/advertising-goods/signage.jpg',
+    name: 'Poster',
+    image_path: '/assets/product-thumbnail/advertising-goods/poster.jpg',
     slug: 'advertising-goods'
   },
   {
@@ -43,12 +43,6 @@ export const products = [
   },
   {
     category: 'Awards & Citations',
-    name: 'Trophy',
-    image_path: '/assets/product-thumbnail/awards-citations/trophy.jpg',
-    slug: 'awards-citations'
-  },
-  {
-    category: 'Awards & Citations',
     name: 'Medal',
     image_path: '/assets/product-thumbnail/awards-citations/medal.jpg',
     slug: 'awards-citations'
@@ -66,6 +60,18 @@ export const products = [
     slug: 'awards-citations'
   },
   {
+    category: 'Awards & Citations',
+    name: 'Trophy',
+    image_path: '/assets/product-thumbnail/awards-citations/trophy.jpg',
+    slug: 'awards-citations'
+  },
+  {
+    category: 'Collaterals',
+    name: 'Business Card',
+    image_path: '/assets/product-thumbnail/collaterals/business-card.jpg',
+    slug: 'collaterals'
+  },
+  {
     category: 'Collaterals',
     name: 'Brochure',
     image_path: '/assets/product-thumbnail/collaterals/brochure.jpg',
@@ -79,21 +85,9 @@ export const products = [
   },
   {
     category: 'Collaterals',
-    name: 'Business Card',
-    image_path: '/assets/product-thumbnail/collaterals/business-card.jpg',
-    slug: 'collaterals'
-  },
-  {
-    category: 'Collaterals',
     name: 'PVC ID Card',
     image_path: '/assets/product-thumbnail/collaterals/pvc-id.jpg',
     slug: 'collaterals'
-  },
-  {
-    category: 'Corporate Giveaways',
-    name: 'Umbrella',
-    image_path: '/assets/product-thumbnail/corporate-giveaways/umbrella.jpg',
-    slug: 'corporate-giveaways'
   },
   {
     category: 'Corporate Giveaways',
@@ -111,6 +105,12 @@ export const products = [
     category: 'Corporate Giveaways',
     name: 'Notebook',
     image_path: '/assets/product-thumbnail/corporate-giveaways/notebook.jpg',
+    slug: 'corporate-giveaways'
+  },
+  {
+    category: 'Corporate Giveaways',
+    name: 'Umbrella',
+    image_path: '/assets/product-thumbnail/corporate-giveaways/umbrella.jpg',
     slug: 'corporate-giveaways'
   },
   {
@@ -133,14 +133,14 @@ export const products = [
   },
   {
     category: 'Garments',
-    name: 'T-shirt',
-    image_path: '/assets/product-thumbnail/garments/tshirt.jpg',
+    name: 'Jacket',
+    image_path: '/assets/product-thumbnail/garments/jacket.jpg',
     slug: 'garments'
   },
   {
     category: 'Garments',
-    name: 'Jacket',
-    image_path: '/assets/product-thumbnail/garments/jacket.jpg',
+    name: 'T-shirt',
+    image_path: '/assets/product-thumbnail/garments/tshirt.jpg',
     slug: 'garments'
   },
   {
@@ -149,12 +149,7 @@ export const products = [
     image_path: '/assets/product-thumbnail/office-equipments/camera.jpg',
     slug: 'office-equipments'
   },
-  {
-    category: 'Office Equipments',
-    name: 'Laptop',
-    image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
-    slug: 'office-equipments'
-  },
+  
   {
     category: 'Office Equipments',
     name: 'Mouse',
@@ -165,6 +160,12 @@ export const products = [
     category: 'Office Equipments',
     name: 'Printer',
     image_path: '/assets/product-thumbnail/office-equipments/printer.jpg',
+    slug: 'office-equipments'
+  },
+  {
+    category: 'Office Equipments',
+    name: 'Laptop',
+    image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
     slug: 'office-equipments'
   },
 ]
