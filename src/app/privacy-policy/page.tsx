@@ -1,3 +1,5 @@
+"use client";
+
 import { FC } from "react";
 import PolicyList from "./components/PolicyList";
 import PolicyHeader from "./components/PolicyHeader";
