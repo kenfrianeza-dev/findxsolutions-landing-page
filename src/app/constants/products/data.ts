@@ -145,14 +145,14 @@ export const products = [
   },
   {
     category: 'Office Equipments',
-    name: 'Laptop',
-    image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
+    name: 'Camera',
+    image_path: '/assets/product-thumbnail/office-equipments/camera.jpg',
     slug: 'office-equipments'
   },
   {
     category: 'Office Equipments',
-    name: 'Camera',
-    image_path: '/assets/product-thumbnail/office-equipments/camera.jpg',
+    name: 'Laptop',
+    image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
     slug: 'office-equipments'
   },
   {
