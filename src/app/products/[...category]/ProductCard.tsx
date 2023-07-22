@@ -2,7 +2,8 @@
 
 import { FC, useId } from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import ProductDialogue from "./ProductDialogue";
+import { motion } from "framer-motion";
 
 interface ProductCardProps {
 	data: [];
@@ -15,14 +16,24 @@ interface ItemProps {
 	slug: string;
 }
 
-const ProductCard: FC<ProductCardProps> = (props) => {
+const ProductCard: FC<ProductCardProps> = ({ data }) => {
 	const id = useId();
-	console.log(props.data);
 
 	return (
-		<>
-			{props.data.map((item: ItemProps) => (
-				<div className="cursor-pointer" key={id}>
+		<motion.div
+			layout
+			className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4"
+		>
+			{data.map((item: ItemProps) => (
+				<motion.div
+					className="cursor-pointer"
+					key={id}
+					initial={{
+						opacity: 0,
+					}}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 1 }}
+				>
 					<Image
 						className="rounded-t-sm relative aspect-square object-cover bg-customPrimary opacity-75 hover:opacity-100 duration-300"
 						src={item.image_path}
@@ -32,13 +43,13 @@ const ProductCard: FC<ProductCardProps> = (props) => {
 					/>
 					<div className="hover:bg-white/5 duration-300 rounded-b-sm flex justify-between items-center gap-4 p-4 border border-t-0 border-l-white/10 border-b-white/10 border-r-white/10">
 						<h1 className="text-center font-semibold">{item.name}</h1>
-						<Button variant={"secondary"} className="text-center border">
-							Request a Quote
-						</Button>
+						<div>
+							<ProductDialogue product={item.name} />
+						</div>
 					</div>
-				</div>
+				</motion.div>
 			))}
-		</>
+		</motion.div>
 	);
 };
 

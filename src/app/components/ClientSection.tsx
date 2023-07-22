@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Image from "next/image";
 import background from "../../../public/background.jpg";
+import { motion } from "framer-motion";
 
 import logo1 from "../../../public/client-logo/ched.png";
 import logo2 from "../../../public/client-logo/dbp.png";
@@ -53,17 +54,29 @@ const ClientSection: FC<ClientSectionProps> = () => {
 				/>
 				<div className="relative bg-customPrimary/60 bg-gradient-to-b from-customPrimary via-transparent to-customPrimary text-white">
 					<div className="relative w-5/6 pt-20 pb-20 mx-auto my-auto">
-						<h1 className="text-3xl text-center mb-2">
+						<motion.h1
+							className="text-3xl text-center mb-2"
+							initial={{
+								opacity: 0,
+							}}
+							whileInView={{ opacity: 1 }}
+							transition={{ duration: 1 }}
+						>
 							Our Regular Clients Since 2022
-						</h1>
+						</motion.h1>
 						{/* Desktop */}
 						<div>
 							<div className="grid grid-cols-5 gap-4 mt-10">
 								{data.map((item) => {
 									return (
-										<div
+										<motion.div
 											className="flex justify-center items-center"
 											key={item.name}
+											initial={{
+												opacity: 0,
+											}}
+											whileInView={{ opacity: 1 }}
+											transition={{ duration: 1.5 }}
 										>
 											<Image
 												className="w-40"
@@ -71,7 +84,7 @@ const ClientSection: FC<ClientSectionProps> = () => {
 												alt={item.name}
 												placeholder="blur"
 											/>
-										</div>
+										</motion.div>
 									);
 								})}
 							</div>

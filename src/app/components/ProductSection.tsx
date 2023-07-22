@@ -1,15 +1,34 @@
 import CustomCarousel from "./CustomCarousel";
 import { FC } from "react";
+import { motion } from "framer-motion";
 
 interface ProductSectionProps {}
 
 const ProductSection: FC<ProductSectionProps> = () => {
 	return (
 		<>
-			<section className="bg-customPrimary text-white">
+			<section id="products-section" className="bg-customPrimary text-white">
 				<div className="w-5/6 pt-20 pb-20 mx-auto my-auto">
-					<h1 className="text-3xl text-center mb-2">Our Products</h1>
-					<CustomCarousel />
+					<motion.h1
+						className="text-3xl text-center mb-2"
+						initial={{
+							opacity: 0,
+						}}
+						whileInView={{ opacity: 1 }}
+						transition={{ duration: 1 }}
+					>
+						Our Products
+					</motion.h1>
+					<motion.div
+						initial={{
+							opacity: 0,
+						}}
+						whileInView={{ opacity: 1 }}
+						transition={{ duration: 1.5 }}
+					>
+						{" "}
+						<CustomCarousel />
+					</motion.div>
 				</div>
 			</section>
 		</>

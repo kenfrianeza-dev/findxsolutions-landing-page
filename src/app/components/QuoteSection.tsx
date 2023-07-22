@@ -18,6 +18,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormField, FormItem } from "@/components/ui/form";
+import { motion } from "framer-motion";
 
 interface QuoteSectionProps {}
 
@@ -110,11 +111,25 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 				className="bg-customPrimary text-white z-50"
 			>
 				<div className="w-5/6 pt-10 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
-					<h1 className="text-3xl text-center">Request a Quote</h1>
+					<motion.h1
+						className="text-3xl text-center"
+						initial={{
+							opacity: 0,
+						}}
+						whileInView={{ opacity: 1 }}
+						transition={{ duration: 1 }}
+					>
+						Request a Quote
+					</motion.h1>
 					<Form {...form}>
-						<form
+						<motion.form
 							onSubmit={handleSubmit(onSubmit)}
 							className="flex flex-col gap-4 w-full sm:w-1/2"
+							initial={{
+								opacity: 0,
+							}}
+							whileInView={{ opacity: 1 }}
+							transition={{ duration: 1.5 }}
 						>
 							{/* Email & Name Field */}
 							<div className="flex flex-col md:flex-row gap-4">
@@ -213,7 +228,7 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 							>
 								Submit
 							</Button>
-						</form>
+						</motion.form>
 					</Form>
 				</div>
 			</section>

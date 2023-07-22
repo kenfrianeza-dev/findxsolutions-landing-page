@@ -1,11 +1,12 @@
 import Image from "next/image";
 import background from "../../../public/background.jpg";
-import logo from "../../../public/logo2.png";
+// import logo from "../../../public/logo2.png";
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
 	return (
-		<section>
+		<section id="hero-section">
 			<Image
 				className="absolute object-cover bg-center bg-cover bg-no-repeat -z-50"
 				src={background}
@@ -17,21 +18,35 @@ const HeroSection = () => {
 				<div className="w-5/6 mx-auto py-24 h-screen">
 					<div className="flex flex-col justify-center gap-y-6 h-full">
 						<div className="flex flex-col gap-y-1">
-							<div>
+							<motion.div
+								initial={{ opacity: 0, x: "-100vw" }}
+								animate={{ opacity: 1, x: 0 }}
+								transition={{ duration: 1 }}
+							>
 								<h1 className="font-sans font-semibold text-5xl">Welcome to</h1>
 								<h1 className="font-sans font-semibold text-5xl ">
 									FIND<span className="text-customSecondary">X</span> SOLUTIONS
 								</h1>
-							</div>
+							</motion.div>
 						</div>
-						<div className="text-xl">
+						<motion.div
+							className="text-xl"
+							initial={{ opacity: 0, x: "-100vw" }}
+							animate={{ opacity: 1, x: 0 }}
+							transition={{ duration: 1.5 }}
+						>
 							<p>The Philippines’ No.1 Go-To Company</p>
 							<p>For Office Equipments & Corporate Giveaways </p>
-						</div>
+						</motion.div>
 						{/* Button */}
-						<div className="inline-block">
+						<motion.div
+							className="inline-block"
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							transition={{ duration: 1.5 }}
+						>
 							<Button variant="outline">Get Started</Button>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>

@@ -50,7 +50,7 @@ const Footer: FC<FooterProps> = () => {
 							>
 								<BsFacebook /> Facebook
 							</Link>
-							<Link
+							{/* <Link
 								className="flex items-center justify-center gap-x-2 w-fit hover:text-white"
 								href="/"
 							>
@@ -61,7 +61,7 @@ const Footer: FC<FooterProps> = () => {
 								href="/"
 							>
 								<BsFacebook /> Facebook
-							</Link>
+							</Link> */}
 						</div>
 					</div>
 				</div>

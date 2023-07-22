@@ -7,6 +7,21 @@
   src: url('https://fonts.googleapis.com/css2?family=Century+Gothic&display=swap');
 }
 
+::-webkit-scrollbar {
+	width: 0.25em;
+	height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+	background: hsl(215, 85%, 10%);
+	border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+	background: hsl(216, 38%, 25%);
+	border-radius: 100vw;
+}
+
 @layer base {
   :root {
     --background: hsl(0 0% 100%);
