@@ -20,7 +20,7 @@ const ProductCard: FC<ProductCardProps> = (props) => {
 	return (
 		<>
 			{props.data.map((item: ItemProps, index: number) => (
-				<div className="cursor-pointer " key={id}>
+				<div className="cursor-pointer" key={id}>
 					<Image
 						className="rounded-t-sm relative aspect-square object-cover bg-customPrimary opacity-75 hover:opacity-100 duration-300"
 						src={item.image_path}
