@@ -18,7 +18,9 @@ const Navbar: FC<NavbarProps> = () => {
 
 	window.addEventListener("scroll", changeColor);
 
-	const toggleMobileMenu = () => {};
+	// const toggleMobileMenu = () => {
+
+	// };
 
 	const data = [
 		{ name: "Home", url: "/", offset: 0, id: "hero-section" },
