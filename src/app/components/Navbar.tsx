@@ -62,7 +62,7 @@ const Navbar: FC<NavbarProps> = () => {
 						<TbMenu
 							className="lg:hidden md:hidden block cursor-pointer"
 							size={32}
-							onClick={}
+							// onClick={}
 						/>
 						{/* Desktop Menu */}
 						<ul className="lg:flex md:flex hidden gap-x-6 font-light">
