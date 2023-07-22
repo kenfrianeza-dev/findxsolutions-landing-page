@@ -59,12 +59,12 @@ export const products = [
     image_path: '/assets/product-thumbnail/garments/tshirt.jpg',
     slug: 'garments'
   },
-  // {
-  //   category: 'Office Equipments',
-  //   name: 'Laptop',
-  //   image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
-  //   slug: 'office-equipments'
-  // },
+  {
+    category: 'Office Equipments',
+    name: 'Laptop',
+    image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
+    slug: 'office-equipments'
+  },
   {
     category: 'Office Equipments',
     name: 'Camera',
