@@ -17,13 +17,15 @@ interface ItemProps {
 
 const ProductCard: FC<ProductCardProps> = (props) => {
 	const id = useId();
+	console.log(props.data);
+
 	return (
 		<>
-			{props.data.map((item: ItemProps, index: number) => (
+			{props.data.map((item: ItemProps) => (
 				<div className="cursor-pointer" key={id}>
 					<Image
 						className="rounded-t-sm relative aspect-square object-cover bg-customPrimary opacity-75 hover:opacity-100 duration-300"
-						src={`${item.image_path}`}
+						src={item.image_path}
 						alt={item.name}
 						blurDataURL={item.image_path}
 						placeholder="blur"

@@ -59,10 +59,28 @@ export const products = [
     image_path: '/assets/product-thumbnail/garments/tshirt.jpg',
     slug: 'garments'
   },
+  // {
+  //   category: 'Office Equipments',
+  //   name: 'Laptop',
+  //   image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
+  //   slug: 'office-equipments'
+  // },
   {
     category: 'Office Equipments',
-    name: 'Laptop',
-    image_path: '/assets/product-thumbnail/office-equipments/laptop.jpg',
+    name: 'Camera',
+    image_path: '/assets/product-thumbnail/office-equipments/camera.jpg',
     slug: 'office-equipments'
-  }
+  },
+  {
+    category: 'Office Equipments',
+    name: 'Mouse',
+    image_path: '/assets/product-thumbnail/office-equipments/mouse.jpg',
+    slug: 'office-equipments'
+  },
+  {
+    category: 'Office Equipments',
+    name: 'Printer',
+    image_path: '/assets/product-thumbnail/office-equipments/printer.jpg',
+    slug: 'office-equipments'
+  },
 ]

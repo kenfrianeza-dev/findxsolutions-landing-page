@@ -7,7 +7,7 @@ interface ProductProps {
 
 const Product: FC<ProductProps> = async ({ params }) => {
 	const res = await fetch(
-		`https://findxsolutions.vercel.app/api/products/category/${params.category}`
+		`http://findxsolutions.vercel.app/api/products/category/${params.category}`
 	);
 	const products = await res.json();
 	const { data } = products;
