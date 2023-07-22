@@ -8,9 +8,17 @@ import { motion } from "framer-motion";
 interface LearnMoreProps {}
 
 const LearnMore: FC<LearnMoreProps> = () => {
+	const data = [
+		"Integrity",
+		"Efficiency",
+		"Humility",
+		"Honesty",
+		"Transparency",
+	];
+
 	return (
 		<>
-			<section>
+			<section className="bg-customPrimary">
 				<Image
 					className="absolute object-cover bg-center bg-cover bg-no-repeat"
 					src={background}
@@ -19,7 +27,7 @@ const LearnMore: FC<LearnMoreProps> = () => {
 					fill
 				/>
 				<div className="relative flex w-full min-h-screen bg-customPrimary/60 bg-gradient-to-b from-transparent via-transparent to-customPrimary text-white">
-					<div className="m-20 w-5/6 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
+					<div className="mt-15 w-5/6 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
 						<motion.h1
 							initial={{
 								opacity: 0,
@@ -28,9 +36,10 @@ const LearnMore: FC<LearnMoreProps> = () => {
 							transition={{ duration: 1.5 }}
 							className="text-4xl text-center font-bold"
 						>
-							About Us
+							LEARN MORE ABOUT US
 						</motion.h1>
 						<motion.p
+							className="text-justify"
 							initial={{
 								opacity: 0,
 							}}
@@ -46,6 +55,7 @@ const LearnMore: FC<LearnMoreProps> = () => {
 						</motion.p>
 
 						<motion.p
+							className="text-justify"
 							initial={{
 								opacity: 0,
 							}}
@@ -59,6 +69,90 @@ const LearnMore: FC<LearnMoreProps> = () => {
 							and we will make you feel the FindX&apos;s great customer service
 							like you&apos;ve never experienced before!
 						</motion.p>
+
+						<div className="border-b border-b-white/25 w-full"></div>
+
+						<div className="grid grid-cols-3 gap-4">
+							<div className="flex flex-col gap-4 ">
+								<motion.h1
+									initial={{
+										opacity: 0,
+									}}
+									whileInView={{ opacity: 1 }}
+									transition={{ duration: 1.5 }}
+									className="text-4xl text-center font-bold"
+								>
+									THE 3-POINT VISION
+								</motion.h1>
+								<motion.p
+									className="text-justify"
+									initial={{
+										opacity: 0,
+									}}
+									whileInView={{ opacity: 1 }}
+									transition={{ duration: 1 }}
+								>
+									To provide solution to every Filipinos&apos; needs, invade the
+									global market, and be one of the top players in the global
+									economy.
+								</motion.p>
+							</div>
+
+							<div className="flex flex-col gap-4 border-l border-l-white/25 border-r border-r-white/25">
+								<motion.h1
+									initial={{
+										opacity: 0,
+									}}
+									whileInView={{ opacity: 1 }}
+									transition={{ duration: 1.5 }}
+									className="text-4xl text-center font-bold"
+								>
+									CORE VALUES
+								</motion.h1>
+								<ul className="text-center">
+									{data.map((item) => {
+										return (
+											<li key={item}>
+												<motion.p
+													initial={{
+														opacity: 0,
+													}}
+													whileInView={{ opacity: 1 }}
+													transition={{ duration: 1 }}
+												>
+													{item}
+												</motion.p>
+											</li>
+										);
+									})}
+								</ul>
+							</div>
+
+							<div className="flex flex-col gap-4 ">
+								<motion.h1
+									initial={{
+										opacity: 0,
+									}}
+									whileInView={{ opacity: 1 }}
+									transition={{ duration: 1.5 }}
+									className="text-4xl text-center font-bold"
+								>
+									MISSION
+								</motion.h1>
+								<motion.p
+									className="text-justify"
+									initial={{
+										opacity: 0,
+									}}
+									whileInView={{ opacity: 1 }}
+									transition={{ duration: 1 }}
+								>
+									To deliver goods to our consumers as efficient and as fast as
+									possible, while as the same time, maintaining high-quality
+									customer service to our clients.
+								</motion.p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
