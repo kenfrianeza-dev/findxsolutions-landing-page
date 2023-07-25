@@ -6,16 +6,16 @@ import { motion } from "framer-motion";
 const HeroSection = () => {
 	return (
 		<>
-			<Image
-				className="object-cover bg-center bg-cover bg-no-repeat -z-[50]"
-				src={background}
-				alt="background"
-				placeholder="blur"
-				fill
-			/>
-			<section id="hero-section">
+			<section id="hero-section" className="relative">
+				<Image
+					className="absolute object-cover bg-center bg-cover bg-no-repeat -z-[50]"
+					src={background}
+					alt="background"
+					placeholder="blur"
+					fill
+				/>
 				<div className="relative bg-customPrimary/60 bg-gradient-to-b from-transparent via-transparent to-customPrimary text-white">
-					<div className="w-5/6 mx-auto py-24 h-screen">
+					<div className="max-w-4xl w-11/12 mx-auto py-24 h-screen">
 						<div className="flex flex-col justify-center gap-y-6 h-full">
 							<div className="flex flex-col gap-y-1">
 								<motion.div
@@ -50,7 +50,7 @@ const HeroSection = () => {
 							>
 								<Link
 									href="#products-section"
-									className="text-xl border px-4 py-2 rounded-md hover:bg-white hover:text-customPrimary duration-300"
+									className="text-lg border px-4 py-2 rounded-md hover:bg-white hover:text-customPrimary duration-300"
 								>
 									Get Started
 								</Link>

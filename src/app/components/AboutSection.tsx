@@ -8,7 +8,7 @@ const AboutSection: FC<AboutSectionProps> = () => {
 	return (
 		<>
 			<section id="about-us" className="bg-customPrimary text-white">
-				<div className="w-5/6 pt-20 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
+				<div className="lg:max-w-4xl w-11/12 pt-20 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
 					<motion.h1
 						className="text-3xl text-center"
 						initial={{

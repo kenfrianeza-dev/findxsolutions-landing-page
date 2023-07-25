@@ -8,7 +8,7 @@ const Footer: FC<FooterProps> = () => {
 	return (
 		<>
 			<footer className="flex flex-col justify-center items-center bg-customPrimary text-white">
-				<div className="w-5/6 md:flex md:justify-evenly sm:grid sm:grid-cols-1 gap-y-4 border-t border-white/25 md:px-6">
+				<div className="max-w-4xl w-11/12 md:flex md:justify-between sm:grid sm:grid-cols-1 gap-y-4 border-t border-white/25 md:px-6">
 					<div className="flex flex-col gap-y-4 mt-4">
 						<h1 className="text-xl">Navigations</h1>
 						<div className="flex flex-col gap-y-1 text-white/75 font-extralight">
@@ -70,7 +70,7 @@ const Footer: FC<FooterProps> = () => {
 				</div>
 				<Link
 					href="/"
-					className="w-5/6 text-white/50 hover:text-white md:text-center sm:text-start my-4"
+					className="w-11/12 text-white/50 hover:text-white md:text-center sm:text-start my-4"
 				>
 					Copyright &copy; 2023 FindX Solutions All Rights Reserved
 				</Link>

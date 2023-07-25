@@ -14,7 +14,7 @@ const Product: FC<ProductProps> = async ({ params }) => {
 	return (
 		<>
 			<div className="bg-customPrimary w-full min-h-screen pt-24 pb-10">
-				<div className="w-5/6 mx-auto text-white flex flex-col gap-y-6">
+				<div className="max-w-6xl w-11/12 mx-auto text-white flex flex-col gap-y-6">
 					<h1 className="text-3xl text-center">{data[0].category}</h1>
 					<ProductCard data={data} />
 				</div>

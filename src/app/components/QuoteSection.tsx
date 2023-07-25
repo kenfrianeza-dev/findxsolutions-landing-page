@@ -110,7 +110,7 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 				id="contact-section"
 				className="bg-customPrimary text-white z-50"
 			>
-				<div className="w-5/6 pt-10 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
+				<div className="max-w-6xl w-11/12 pt-10 pb-20 mx-auto my-auto flex flex-col justify-center items-center gap-8">
 					<motion.h1
 						className="text-3xl text-center"
 						initial={{
@@ -124,7 +124,7 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 					<Form {...form}>
 						<motion.form
 							onSubmit={handleSubmit(onSubmit)}
-							className="flex flex-col gap-4 w-full sm:w-1/2"
+							className="flex flex-col gap-4 w-full sm:w-4/5"
 							initial={{
 								opacity: 0,
 							}}

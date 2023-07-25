@@ -40,7 +40,7 @@ const Navbar: FC<NavbarProps> = () => {
 				} duration-300`}
 			>
 				{/* <nav className="fixed w-full text-white z-[999]"> */}
-				<div className="w-5/6 py-3 mx-auto flex justify-between">
+				<div className="w-11/12 py-3 mx-auto flex justify-between">
 					<Link
 						href="/"
 						className="flex items-center justify-center"

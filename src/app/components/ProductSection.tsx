@@ -8,7 +8,7 @@ const ProductSection: FC<ProductSectionProps> = () => {
 	return (
 		<>
 			<section id="products-section" className="bg-customPrimary text-white">
-				<div className="w-5/6 pt-20 pb-20 mx-auto my-auto">
+				<div className="max-w-4xl w-11/12 pt-20 pb-20 mx-auto my-auto">
 					<motion.h1
 						className="text-3xl text-center mb-2"
 						initial={{

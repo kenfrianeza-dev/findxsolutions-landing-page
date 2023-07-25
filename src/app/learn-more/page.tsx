@@ -27,7 +27,7 @@ const LearnMore: FC<LearnMoreProps> = () => {
 					fill
 				/> */}
 				<div className="relative flex w-full min-h-screen bg-customPrimary/60 bg-gradient-to-b from-transparent via-transparent to-customPrimary text-white">
-					<div className="m-20 w-5/6 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
+					<div className="m-20 w-11/12 mx-auto text-white flex flex-col justify-center items-center gap-y-6">
 						<motion.h1
 							initial={{
 								opacity: 0,
