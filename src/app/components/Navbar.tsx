@@ -64,7 +64,12 @@ const Navbar: FC<NavbarProps> = () => {
 						<ul className="lg:flex md:flex hidden gap-x-6 font-light">
 							{data.map((item) => (
 								<li key={item.name}>
-									<Link href={item.url}>{item.name}</Link>
+									<Link
+										href={item.url}
+										className="hover:border-b-2 duration-75"
+									>
+										{item.name}
+									</Link>
 								</li>
 							))}
 						</ul>
