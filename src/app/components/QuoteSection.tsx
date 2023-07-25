@@ -77,10 +77,10 @@ const QuoteSection: FC<QuoteSectionProps> = () => {
 
 		try {
 			await emailjs.send(
-				"service_nyun8ui",
-				"template_y1gavut",
+				`${process.env.serviceId}`,
+				`${process.env.templateId}`,
 				templateParams,
-				"M4-8XGAIYlMNLPlZp"
+				`${process.env.publicKey}`
 			);
 		} catch (error) {
 			console.log(error);
