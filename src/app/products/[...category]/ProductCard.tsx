@@ -6,10 +6,10 @@ import ProductDialogue from "./ProductDialogue";
 import { motion } from "framer-motion";
 
 interface ProductCardProps {
-	data: [];
+	data: Array<ItemType>;
 }
 
-interface ItemProps {
+interface ItemType {
 	category: string;
 	name: string;
 	image_path: string;
@@ -24,7 +24,7 @@ const ProductCard: FC<ProductCardProps> = ({ data }) => {
 			layout
 			className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4"
 		>
-			{data.map((item: ItemProps) => (
+			{data.map((item) => (
 				<motion.div
 					className="cursor-pointer"
 					key={id}
