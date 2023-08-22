@@ -11,9 +11,11 @@ interface ProductCardProps {
 
 interface ItemType {
 	category: string;
+	sub_category: string;
 	name: string;
 	image_path: string;
 	slug: string;
+	sub_slug: string;
 }
 
 const ProductCard: FC<ProductCardProps> = ({ data }) => {
@@ -26,8 +28,7 @@ const ProductCard: FC<ProductCardProps> = ({ data }) => {
 		>
 			{data.map((item) => (
 				<motion.div
-					className="cursor-pointer"
-					key={id}
+					key={id + item.name}
 					initial={{
 						opacity: 0,
 					}}
@@ -35,15 +36,15 @@ const ProductCard: FC<ProductCardProps> = ({ data }) => {
 					transition={{ duration: 1 }}
 				>
 					<Image
-						className="rounded-t-sm relative aspect-square object-cover bg-customPrimary opacity-75 hover:opacity-100 duration-300"
+						className="cursor-pointer rounded-t-sm relative aspect-square object-cover bg-customPrimary opacity-75 hover:opacity-100 duration-300"
 						src={item.image_path}
 						alt={item.name}
 						width={1024}
 						height={1024}
 					/>
-					<div className="hover:bg-white/5 duration-300 rounded-b-sm flex justify-between items-center gap-4 p-4 border border-t-0 border-l-white/10 border-b-white/10 border-r-white/10">
-						<h1 className="text-center font-semibold">{item.name}</h1>
-						<div>
+					<div className="cursor-pointer hover:bg-white/5 duration-300 rounded-b-sm border border-t-0 border-l-white/10 border-b-white/10 border-r-white/10">
+						<div className="flex flex-col justify-center items-center gap-2 pt-2 pb-4">
+							<h1 className="font-semibold">{item.name}</h1>
 							<ProductDialogue product={item.name} />
 						</div>
 					</div>

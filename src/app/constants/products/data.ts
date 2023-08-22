@@ -24,6 +24,30 @@ export const items = [
     slug: 'office-equipments'
   },
   {
+    category: 'Office Equipments',
+    name: 'External Storage',
+    image_path: '/assets/product-thumbnail/office-equipments/external-storage.jpg',
+    slug: 'office-equipments'
+  },
+  {
+    category: 'Office Equipments',
+    name: 'Internal Storage',
+    image_path: '/assets/product-thumbnail/office-equipments/internal-storage.jpg',
+    slug: 'office-equipments'
+  },
+  {
+    category: 'Office Equipments',
+    name: 'Keyboards',
+    image_path: '/assets/product-thumbnail/office-equipments/keyboard.jpg',
+    slug: 'office-equipments'
+  },
+  {
+    category: 'Office Equipments',
+    name: 'Tablets',
+    image_path: '/assets/product-thumbnail/office-equipments/tablets.jpg',
+    slug: 'office-equipments'
+  },
+  {
     category: 'Advertising Goods',
     name: 'Signages',
     image_path: '/assets/product-thumbnail/advertising-goods/signage.jpg',
@@ -40,6 +64,12 @@ export const items = [
     name: 'Tarpaulins',
     image_path: '/assets/product-thumbnail/advertising-goods/tarpaulin.jpg',
     slug: 'advertising-goods'
+  },
+  {
+    category: 'Appliances',
+    name: 'Washing Machine',
+    image_path: '/assets/product-thumbnail/appliances/washing-machine.jpg',
+    slug: 'appliances'
   },
   {
     category: 'Appliances',
@@ -91,6 +121,12 @@ export const items = [
   },
   {
     category: 'Collaterals',
+    name: 'Flyers',
+    image_path: '/assets/product-thumbnail/collaterals/flyers.jpg',
+    slug: 'collaterals'
+  },
+  {
+    category: 'Collaterals',
     name: 'Business Cards',
     image_path: '/assets/product-thumbnail/collaterals/business-card.jpg',
     slug: 'collaterals'
@@ -112,6 +148,12 @@ export const items = [
     name: 'PVC ID Cards',
     image_path: '/assets/product-thumbnail/collaterals/pvc-id.jpg',
     slug: 'collaterals'
+  },
+  {
+    category: 'Corporate Giveaways',
+    name: 'Gift Set',
+    image_path: '/assets/product-thumbnail/corporate-giveaways/gift-set.jpg',
+    slug: 'corporate-giveaways'
   },
   {
     category: 'Corporate Giveaways',
@@ -157,6 +199,12 @@ export const items = [
   },
   {
     category: 'Garments',
+    name: 'Polo Shirts',
+    image_path: '/assets/product-thumbnail/garments/polo-shirt.jpg',
+    slug: 'garments'
+  },
+  {
+    category: 'Garments',
     name: 'Jackets',
     image_path: '/assets/product-thumbnail/garments/jacket.jpg',
     slug: 'garments'
@@ -166,5 +214,99 @@ export const items = [
     name: 'T-shirts',
     image_path: '/assets/product-thumbnail/garments/tshirt.jpg',
     slug: 'garments'
-  }
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Office Chairs',
+    name: 'Clerical Chair',
+    image_path: '/assets/product-thumbnail/office-furnitures/office-chairs/clerical-chair.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'office-chairs'
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Office Chairs',
+    name: "Visitor's Chair",
+    image_path: '/assets/product-thumbnail/office-furnitures/office-chairs/visitors-chair.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'office-chairs'
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Office Chairs',
+    name: 'Executive Chair',
+    image_path: '/assets/product-thumbnail/office-furnitures/office-chairs/executive-chair.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'office-chairs'
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Office Tables',
+    name: "Clerical Table",
+    image_path: '/assets/product-thumbnail/office-furnitures/office-tables/clerical-table.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'office-tables'
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Office Tables',
+    name: 'Executive Table',
+    image_path: '/assets/product-thumbnail/office-furnitures/office-tables/executive-table.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'office-tables'
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Filing Cabinets',
+    name: 'Lateral Filing Cabinet',
+    image_path: '/assets/product-thumbnail/office-furnitures/filing-cabinets/lateral-filing-cabinet.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'filing-cabinets'
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Filing Cabinets',
+    name: "Vertical Filing Cabinet",
+    image_path: '/assets/product-thumbnail/office-furnitures/filing-cabinets/vertical-filing-cabinet.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'filing-cabinets'
+  },
+  {
+    category: 'Office Furnitures',
+    sub_category: 'Filing Cabinets',
+    name: 'Mobile Pedestal Cabinet',
+    image_path: '/assets/product-thumbnail/office-furnitures/filing-cabinets/mobile-pedestal-cabinet.jpg',
+    slug: 'office-furnitures',
+    sub_slug: 'filing-cabinets'
+  },
+  {
+    category: 'Audio-Visual Equipments',
+    name: 'Amplifiers',
+    image_path: '/assets/product-thumbnail/audio-visual-equipments/amplifier.jpg',
+    slug: 'audio-visual-equipments'
+  },
+  {
+    category: 'Audio-Visual Equipments',
+    name: 'Microphones',
+    image_path: '/assets/product-thumbnail/audio-visual-equipments/microphone.jpg',
+    slug: 'audio-visual-equipments'
+  },
+  {
+    category: 'Audio-Visual Equipments',
+    name: 'Mixers',
+    image_path: '/assets/product-thumbnail/audio-visual-equipments/mixer.jpg',
+    slug: 'audio-visual-equipments'
+  },
+  {
+    category: 'Audio-Visual Equipments',
+    name: 'Projectors',
+    image_path: '/assets/product-thumbnail/audio-visual-equipments/projector.jpg',
+    slug: 'audio-visual-equipments'
+  },
+  {
+    category: 'Audio-Visual Equipments',
+    name: 'Speakers',
+    image_path: '/assets/product-thumbnail/audio-visual-equipments/speaker.jpg',
+    slug: 'audio-visual-equipments'
+  },
 ]

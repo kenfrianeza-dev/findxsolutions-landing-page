@@ -8,6 +8,8 @@ import product4 from "../../../public/poster.jpg";
 import product5 from "../../../public/trophy.jpg";
 import product6 from "../../../public/brochure.jpg";
 import product7 from "../../../public/umbrella.jpg";
+import product8 from "../../../public/mobile-pedestal-cabinet.jpg";
+import product9 from "../../../public/projector.jpg";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -81,6 +83,16 @@ const CustomCarousel: FC<CustomCarouselProps> = () => {
 			source: product7,
 			name: "Corporate Giveaways",
 			url: "/products/corporate-giveaways",
+		},
+		{
+			source: product8,
+			name: "Office Furnitures",
+			url: "/products/office-furnitures",
+		},
+		{
+			source: product9,
+			name: "Audio-Visual Equipments",
+			url: "/products/audio-visual-equipments",
 		},
 	];
 
