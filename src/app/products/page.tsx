@@ -2,11 +2,12 @@ import Link from "next/link";
 import { FC } from "react";
 import ProductCard from "../components/ProductCard";
 import ProductMenu from "../components/ProductMenu";
+import { URL_DOMAIN } from "../constants/domain";
 
 interface ProductsProps {}
 
 const Products: FC<ProductsProps> = async () => {
-	const res = await fetch(`http://localhost:3000/api/products`);
+	const res = await fetch(`${URL_DOMAIN}/api/products`);
 	const products = await res.json();
 	const { data } = products;
 

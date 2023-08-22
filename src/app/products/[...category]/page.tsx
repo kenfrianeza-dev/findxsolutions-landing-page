@@ -2,14 +2,15 @@ import { FC } from "react";
 import ProductCard from "../../components/ProductCard";
 import ProductMenu from "@/app/components/ProductMenu";
 import Link from "next/link";
+import { URL_DOMAIN } from "@/app/constants/domain";
 
 interface ProductProps {
 	params: { category: string };
 }
 
 const Product: FC<ProductProps> = async ({ params }) => {
-	const API_URL_NO_SUB = `http://localhost:3000/api/products/${params.category[0]}`;
-	const API_URL_WITH_SUB = `http://localhost:3000/api/products/${params.category[0]}/${params.category[1]}`;
+	const API_URL_NO_SUB = `${URL_DOMAIN}/api/products/${params.category[0]}`;
+	const API_URL_WITH_SUB = `${URL_DOMAIN}/api/products/${params.category[0]}/${params.category[1]}`;
 	const SUB_CATEGORY = params.category.length > 1;
 	const res = await fetch(SUB_CATEGORY ? API_URL_WITH_SUB : API_URL_NO_SUB);
 	const products = await res.json();
