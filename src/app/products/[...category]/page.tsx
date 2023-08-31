@@ -1,7 +1,7 @@
 import { FC } from "react";
+import Link from "next/link";
 import ProductCard from "../../components/ProductCard";
 import ProductMenu from "@/app/components/ProductMenu";
-import Link from "next/link";
 import { URL_DOMAIN } from "@/app/constants/domain";
 
 interface ProductProps {
